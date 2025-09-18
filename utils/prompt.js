@@ -38,9 +38,9 @@ export const runPromptUntilExit = async () => {
           if (history.length > 0) {
             console.log('History:')
             history.forEach((item, index) => {
-              console.log(`Question #${index}:`);
+              console.log(`Question #${index + 1}:`);
               console.log(item.question);
-              console.log(`Answer #${index}:`);
+              console.log(`Answer #${index + 1}:`);
               console.log(item.answer);
             });
           } else {
