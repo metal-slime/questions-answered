@@ -4,11 +4,16 @@ This is an application provides a CLI to ask questions to a chosen LLM provider.
 
 Node v22.14.0, Express v5.1.0
 
+## Requirements
+
+Node v22.14.0 must be available on your system. To install see https://nodejs.org/en/download
+
 ## To run application
 
 1. Clone the repo locally
 2. `npm install`
-3. `npm run start`
+3. Put your Gemini API Key in the `GEMINI_API_KEY` variable in a `.env` file in the root directory of the project
+4. `npm run start`
 
 
 
@@ -29,3 +34,8 @@ This is currently only able to use Gemini (free or paid) but can be updated to u
 
 Add in testing
 Add in Anthropic
+
+
+# Description
+
+This is a thought experiment on making a CLI interface to use multiple GPT engines. The back end consists of an API so that it could easily be used by multiple services or expanded to meet the needs of multiple tools. It is usable, extensible, and can be plugged into any system.
