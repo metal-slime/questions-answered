@@ -8,6 +8,8 @@ Node v22.14.0, Express v5.1.0
 
 Node v22.14.0 must be available on your system. To install see https://nodejs.org/en/download
 
+To get a Gemini API Key, go to https://aistudio.google.com/app/apikey
+
 ## To run application
 
 1. Clone the repo locally
