@@ -8,7 +8,8 @@ Node v22.14.0, Express v5.1.0
 
 1. Clone the repo locally
 2. `npm install`
-3. `npm run start`
+3. Put your Gemini API Key in the `GEMINI_API_KEY` variable in a `.env` file in the root directory
+4. `npm run start`
 
 
 
@@ -29,3 +30,8 @@ This is currently only able to use Gemini (free or paid) but can be updated to u
 
 Add in testing
 Add in Anthropic
+
+
+# Description
+
+This is a thought experiment on making a CLI interface to use multiple GPT engines. The back end consists of an API so that it could easily be used by multiple services or expanded to meet the needs of multiple tools. It is usable, extensible, and can be plugged into any system.
