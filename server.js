@@ -16,7 +16,7 @@ app.use("/heartbeat", heartbeatRouter);
 
 // Start the app, if no API keys are provided, close the app
 if (!config.ANTHROPIC_API_KEY && !config.GEMINI_API_KEY && !config.CHATGPT_API_KEY) {
-  console.log('At least one API Key must be provided');
+  console.log("At least one API Key must be provided");
   process.exit(0);
 } else {
   app.listen(PORT, () => {
@@ -25,14 +25,14 @@ if (!config.ANTHROPIC_API_KEY && !config.GEMINI_API_KEY && !config.CHATGPT_API_K
 }
 
 
-process.on('uncaughtException', (err) => {
+process.on("uncaughtException", (err) => {
   // Log the uncaught exception and exit application
-  console.error('Uncaught Exception:', err);
+  console.error("Uncaught Exception:", err);
   process.exit(0);
 });
 
 
-process.on('unhandledRejection', (reason, promise) => {
+process.on("unhandledRejection", (reason, promise) => {
   // Log the unhandled rejection
-  console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+  console.error("Unhandled Rejection at:", promise, "reason:", reason);
 });

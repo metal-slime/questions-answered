@@ -10,7 +10,7 @@ const router = express.Router();
 
 const ai = new GoogleGenAI({apiKey: config.GEMINI_API_KEY});
 
-router.post('/', body("question", "Question is required.").trim().notEmpty(), async (req, res) => {
+router.post("/", body("question", "Question is required.").trim().notEmpty(), async (req, res) => {
   try {
     // Validate that a question is attached to the body
     const validRequest = validationResult(req);
@@ -37,7 +37,7 @@ router.post('/', body("question", "Question is required.").trim().notEmpty(), as
   }
 })
 
-router.get('/history', (req, res) => {
+router.get("/history", (req, res) => {
   try {
     // Convert the history file to a user database in the future and access it through a get/post endpoint combination
     res.sendStatus(200);
@@ -84,7 +84,7 @@ const callGenerator = async (question, useHistory = false, engine = config.defau
           }
           // Each case can be broken further in to its own function for clarity
           const response = await ai.models.generateContent({
-            model: 'gemini-2.0-flash-001',
+            model: "gemini-2.0-flash-001",
             contents: contents,
             config: {
               thinkingConfig: {
