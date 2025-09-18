@@ -4,6 +4,10 @@ This is an application provides a CLI to ask questions to a chosen LLM provider.
 
 Node v22.14.0, Express v5.1.0
 
+## Requirements
+
+Node v22.14.0 must be available on your system. To install see https://nodejs.org/en/download
+
 ## To run application
 
 1. Clone the repo locally
