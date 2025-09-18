@@ -1,0 +1,28 @@
+{
+  "name": "questions-answered",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha 'test/*.js'",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Joe Kelly",
+  "license": "",
+  "description": "This is an application provides a CLI to ask questions to a chosen LLM provider. It is meant to be run on Node 22 or higher.",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.63.0",
+    "@google/genai": "^1.20.0",
+    "@inquirer/prompts": "^7.8.6",
+    "chatgpt": "^5.2.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1"
+  },
+  "devDependencies": {
+    "chai": "^6.0.1",
+    "mocha": "^11.7.2",
+    "supertest": "^7.1.4"
+  }
+}
