@@ -12,7 +12,7 @@ Node v22.14.0 must be available on your system. To install see https://nodejs.or
 
 1. Clone the repo locally
 2. `npm install`
-3. Put your Gemini API Key in the `GEMINI_API_KEY` variable in a `.env` file in the root directory
+3. Put your Gemini API Key in the `GEMINI_API_KEY` variable in a `.env` file in the root directory of the project
 4. `npm run start`
 
 
