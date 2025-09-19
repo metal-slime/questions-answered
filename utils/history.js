@@ -17,12 +17,12 @@ export const setHistory = async (question, answer) => {
     json.push({
       "question": question.endsWith("? history") ? question.replace("? history", "?") : question,
       "answer": answer
-    })
+    });
 
     await fs.writeFile(path.join(__dirname, "history.json"), JSON.stringify(json));
 
     return true;
   } catch (err) {
-    console.log("An error has occured saving user history.")
+    console.log("An error has occured saving user history.");
   }
 }
