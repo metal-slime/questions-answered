@@ -65,8 +65,7 @@ export const runPromptUntilExit = async () => {
           console.log(`Your answer: ${response.answer}`);
           await setHistory(question, response.answer);
       }
-    }
-    catch (err) {
+    } catch (err) {
       if (err.name === "ExitPromptError") {
         console.log("Exiting application.");
         process.exit(0); // Terminate the process
